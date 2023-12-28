@@ -1,16 +1,15 @@
-package com.mobile.mp3_final.ui.bookmark
+package com.mobile.mp1_final.ui.bookmark
 
-import android.app.Application
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mobile.mp3_final.adapter.FavDigimonAdapter
-import com.mobile.mp3_final.database.NoteRoomDatabase
-import com.mobile.mp3_final.databinding.BookmarkFragmentBinding
-import com.mobile.mp3_final.repository.NoteRepository
+import com.mobile.mp1_final.adapter.FavDigimonAdapter
+import com.mobile.mp1_final.database.NoteRoomDatabase
+import com.mobile.mp1_final.databinding.BookmarkFragmentBinding
+import com.mobile.mp1_final.repository.NoteRepository
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

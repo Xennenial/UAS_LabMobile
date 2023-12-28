@@ -1,11 +1,10 @@
-package com.mobile.mp3_final.repository
+package com.mobile.mp1_final.repository
 
 import android.app.Application
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.mobile.mp3_final.database.Note
-import com.mobile.mp3_final.database.NoteDao
-import com.mobile.mp3_final.database.NoteRoomDatabase
+import com.mobile.mp1_final.database.Note
+import com.mobile.mp1_final.database.NoteDao
+import com.mobile.mp1_final.database.NoteRoomDatabase
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 

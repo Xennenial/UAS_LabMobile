@@ -1,11 +1,11 @@
-package com.mobile.mp3_final.ui.profile
+package com.mobile.mp1_final.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.mobile.mp3_final.R
+import com.mobile.mp1_final.R
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

@@ -1,11 +1,11 @@
-package com.mobile.mp3_final
+package com.mobile.mp1_final
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.mobile.mp3_final.databinding.ActivityMainBinding
+import com.mobile.mp1_final.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

@@ -1,4 +1,4 @@
-package com.mobile.mp3_final.api
+package com.mobile.mp1_final.api
 
 import retrofit2.Call
 import retrofit2.http.GET

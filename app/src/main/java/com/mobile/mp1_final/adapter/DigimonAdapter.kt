@@ -1,4 +1,4 @@
-package com.mobile.mp3_final.adapter
+package com.mobile.mp1_final.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,9 +9,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.mobile.mp3_final.R
-import com.mobile.mp3_final.api.HarryPotterResponseItem
-import com.mobile.mp3_final.repository.NoteRepository
+import com.mobile.mp1_final.R
+import com.mobile.mp1_final.api.HarryPotterResponseItem
+import com.mobile.mp1_final.repository.NoteRepository
 
 class DigimonAdapter(private val agents:List<HarryPotterResponseItem>, private val noteRepository: NoteRepository):RecyclerView.Adapter<DigimonAdapter.ViewHolder>() {
 

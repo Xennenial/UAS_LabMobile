@@ -1,20 +1,19 @@
-package com.mobile.mp3_final.ui.home
+package com.mobile.mp1_final.ui.home
 
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.mobile.mp3_final.R
-import com.mobile.mp3_final.adapter.DigimonAdapter
-import com.mobile.mp3_final.api.ApiConfig
-import com.mobile.mp3_final.api.HarryPotterResponseItem
-import com.mobile.mp3_final.databinding.HomeFragmentBinding
-import com.mobile.mp3_final.repository.NoteRepository
+import com.mobile.mp1_final.R
+import com.mobile.mp1_final.adapter.DigimonAdapter
+import com.mobile.mp1_final.api.ApiConfig
+import com.mobile.mp1_final.api.HarryPotterResponseItem
+import com.mobile.mp1_final.databinding.HomeFragmentBinding
+import com.mobile.mp1_final.repository.NoteRepository
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

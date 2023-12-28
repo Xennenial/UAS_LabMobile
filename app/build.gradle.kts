@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mobile.mp3_final"
+    namespace = "com.mobile.mp1_final"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.mobile.mp3_final"
+        applicationId = "com.mobile.mp1_final"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

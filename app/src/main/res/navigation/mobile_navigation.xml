@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.mobile.mp3_final.ui.home.HomeFragment"
+        android:name="com.mobile.mp1_final.ui.home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/home_fragment"/>
 
     <fragment
         android:id="@+id/navigation_bookmark"
-        android:name="com.mobile.mp3_final.ui.bookmark.BookmarkFragment"
+        android:name="com.mobile.mp1_final.ui.bookmark.BookmarkFragment"
         android:label="Bookmark"
         tools:layout="@layout/bookmark_fragment"/>
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.mobile.mp3_final.ui.profile.ProfileFragment"
+        android:name="com.mobile.mp1_final.ui.profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/profile_fragment"/>
 

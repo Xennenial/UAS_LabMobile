@@ -1,14 +1,13 @@
-package com.mobile.mp3_final.adapter
+package com.mobile.mp1_final.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.mobile.mp3_final.database.Note
-import com.mobile.mp3_final.database.NoteDao
-import com.mobile.mp3_final.databinding.ItemRowFavDigimonBinding
-import com.mobile.mp3_final.repository.NoteRepository
+import com.mobile.mp1_final.database.Note
+import com.mobile.mp1_final.databinding.ItemRowFavDigimonBinding
+import com.mobile.mp1_final.repository.NoteRepository
 
 class FavDigimonAdapter(private val noteRepository: NoteRepository) : RecyclerView.Adapter<FavDigimonAdapter.NoteViewHolder>() {
 

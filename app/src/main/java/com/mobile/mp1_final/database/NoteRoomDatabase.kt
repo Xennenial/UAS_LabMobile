@@ -1,4 +1,4 @@
-package com.mobile.mp3_final.database
+package com.mobile.mp1_final.database
 
 import android.content.Context
 import androidx.room.Database
