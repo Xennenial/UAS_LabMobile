@@ -5,15 +5,16 @@
     <string name="profile">profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="meet_our_members">Meet Our Members</string>
-    <string name="lorenzo_liunardo">Lorenzo Liunardo</string>
-    <string name="lorenzo_nim">211401061</string>
-    <string name="dita_anggreani">Dita Anggreani</string>
-    <string name="dita_nim">211401002</string>
-    <string name="habel_febrian_sitanggang">Habel Febrian Sitanggang</string>
-    <string name="habel_nim">211401073</string>
+    <string name="agus_selian">Agus Selian</string>
+    <string name="_211401072">211401072</string>
+    <string name="yessica_angelita_situmorang">Yessica Angelita Situmorang</string>
+    <string name="_211401025">211401025</string>
+    <string name="sammytha_br_siagian">Sammytha Br Siagian</string>
+    <string name="_211401019">211401019</string>
     <string name="character_list">Character List</string>
     <string name="add_to_favorite">Add to Favorite</string>
     <string name="species">Species:</string>
     <string name="name">Name:</string>
     <string name="favorite_character">Favorite Character</string>
+
 </resources>
