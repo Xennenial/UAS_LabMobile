@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mobile.mp1_final.adapter.FavDigimonAdapter
+import com.mobile.mp1_final.adapter.HPFavAdapter
 import com.mobile.mp1_final.database.NoteRoomDatabase
 import com.mobile.mp1_final.databinding.BookmarkFragmentBinding
 import com.mobile.mp1_final.repository.NoteRepository
@@ -32,7 +32,7 @@ class BookmarkFragment : Fragment() {
     private var param2: String? = null
 
     private lateinit var binding: BookmarkFragmentBinding
-    private lateinit var favDigimonAdapter: FavDigimonAdapter
+    private lateinit var HPFavAdapter: HPFavAdapter
     private lateinit var noteRepository: NoteRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,11 +57,11 @@ class BookmarkFragment : Fragment() {
 
         noteRepository = NoteRepository(requireActivity().application)
 
-        favDigimonAdapter = FavDigimonAdapter(noteRepository)
+        HPFavAdapter = HPFavAdapter(noteRepository)
 
         binding.favDigimonRecyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
-            adapter = favDigimonAdapter
+            adapter = HPFavAdapter
         }
 
         loadDataFromDB()
@@ -75,7 +75,7 @@ class BookmarkFragment : Fragment() {
 
             withContext(Dispatchers.Main) {
                 // Set data ke dalam adapter untuk ditampilkan di RecyclerView
-                favDigimonAdapter.setNotes(notes)
+                HPFavAdapter.setNotes(notes)
             }
         }
     }

@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mobile.mp1_final.R
-import com.mobile.mp1_final.adapter.DigimonAdapter
+import com.mobile.mp1_final.adapter.HarryPotterAdapter
 import com.mobile.mp1_final.api.ApiConfig
 import com.mobile.mp1_final.api.HarryPotterResponseItem
 import com.mobile.mp1_final.databinding.HomeFragmentBinding
@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var recyclerView: RecyclerView
-    private lateinit var agentsAdapter: DigimonAdapter
+    private lateinit var agentsAdapter: HarryPotterAdapter
     private lateinit var binding: HomeFragmentBinding
     private lateinit var noteRepository: NoteRepository
 
@@ -56,7 +56,7 @@ class HomeFragment : Fragment() {
         recyclerView = view.findViewById(R.id.digimon_recycler_view)
         val application = requireNotNull(this.activity).application
         noteRepository = NoteRepository(application)
-        agentsAdapter = DigimonAdapter(ArrayList(), noteRepository)
+        agentsAdapter = HarryPotterAdapter(ArrayList(), noteRepository)
         recyclerView.adapter = agentsAdapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
@@ -75,7 +75,7 @@ class HomeFragment : Fragment() {
             ) {
                 if (response.isSuccessful) {
                     val responseBody = response.body()
-                    val adapter = responseBody?.let { DigimonAdapter(it, noteRepository) }
+                    val adapter = responseBody?.let { HarryPotterAdapter(it, noteRepository) }
                     binding.digimonRecyclerView.adapter = adapter
                 }
                 else {
