@@ -53,7 +53,7 @@ class HomeFragment : Fragment() {
         binding = HomeFragmentBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        recyclerView = view.findViewById(R.id.digimon_recycler_view)
+        recyclerView = view.findViewById(R.id.character_recycler_view)
         val application = requireNotNull(this.activity).application
         noteRepository = NoteRepository(application)
         agentsAdapter = HarryPotterAdapter(ArrayList(), noteRepository)
@@ -76,7 +76,7 @@ class HomeFragment : Fragment() {
                 if (response.isSuccessful) {
                     val responseBody = response.body()
                     val adapter = responseBody?.let { HarryPotterAdapter(it, noteRepository) }
-                    binding.digimonRecyclerView.adapter = adapter
+                    binding.characterRecyclerView.adapter = adapter
                 }
                 else {
                     Log.e("Home Fragment" , "network call failure on response: ${response.message()}")

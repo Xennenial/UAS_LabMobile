@@ -59,7 +59,7 @@ class BookmarkFragment : Fragment() {
 
         HPFavAdapter = HPFavAdapter(noteRepository)
 
-        binding.favDigimonRecyclerView.apply {
+        binding.favCharacterRecyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = HPFavAdapter
         }
