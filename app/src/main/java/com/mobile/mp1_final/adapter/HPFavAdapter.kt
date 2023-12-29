@@ -6,14 +6,15 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mobile.mp1_final.database.Note
-import com.mobile.mp1_final.databinding.ItemRowFavDigimonBinding
+import com.mobile.mp1_final.databinding.ItemRowHpBinding
+import com.mobile.mp1_final.databinding.ItemRowFavHpBinding
 import com.mobile.mp1_final.repository.NoteRepository
 
 class HPFavAdapter(private val noteRepository: NoteRepository) : RecyclerView.Adapter<HPFavAdapter.NoteViewHolder>() {
 
     private val listNotes = ArrayList<Note>()
 
-    inner class NoteViewHolder(private val binding: ItemRowFavDigimonBinding): RecyclerView.ViewHolder(binding.root) {
+    inner class NoteViewHolder(private val binding: ItemRowFavHpBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(note: Note) {
             with(binding) {
                 tvItemName.text = note.name
@@ -48,7 +49,7 @@ class HPFavAdapter(private val noteRepository: NoteRepository) : RecyclerView.Ad
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
-        val binding = ItemRowFavDigimonBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemRowFavHpBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return NoteViewHolder(binding)
     }
 

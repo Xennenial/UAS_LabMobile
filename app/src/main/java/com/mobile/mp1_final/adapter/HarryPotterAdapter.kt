@@ -16,7 +16,7 @@ import com.mobile.mp1_final.repository.NoteRepository
 class HarryPotterAdapter(private val agents:List<HarryPotterResponseItem>, private val noteRepository: NoteRepository):RecyclerView.Adapter<HarryPotterAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_row_digimon, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_row_hp, parent, false)
         return ViewHolder(view)
     }
 

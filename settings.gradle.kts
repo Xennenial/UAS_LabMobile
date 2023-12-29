@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MP3_FINAL"
+rootProject.name = "MP1_FINAL"
 include(":app")
  
